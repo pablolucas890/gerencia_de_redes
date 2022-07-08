@@ -25,7 +25,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
   <script defer src="js/script.js"></script>
 
-  <title>Dashboard</title>
+  <title>Monitoramento</title>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
   <nav class="fixed-top navbar navbar-expand-sm navbar-dark bg-primary">
 
     <!-- Logo -->
-    <a href="index.html" class="navbar-brand">
+    <a href="index.php" class="navbar-brand">
       <img src="./img/logo.png" class="logo" alt="Logo">
     </a>
     <!-- Menu Hamburguer -->
@@ -45,19 +45,19 @@
     <div class="collapse navbar-collapse" id="navegacao">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a href="index.html" class="nav-link">Home</a>
+          <a href="index.php" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-          <a href="sensor1.html" class="nav-link">Sensor 1</a>
+          <a href="sensor1.php" class="nav-link">Processos</a>
         </li>
         <li class="nav-item">
-          <a href="sensor1.html" class="nav-link">Sensor 2</a>
+          <a href="sensor2.php" class="nav-link">Datagramas UDP</a>
         </li>
         <li class="nav-item">
-          <a href="sensor1.html" class="nav-link">Sensor 3</a>
+          <a href="sensor3.php" class="nav-link">Tempo no computador</a>
         </li>
         <li class="nav-item">
-          <a href="sensor1.html" class="nav-link">Sensor 4</a>
+          <a href="sensor4.php" class="nav-link">Seguimentos TCP</a>
         </li>
       </ul>
     </div>
@@ -93,15 +93,15 @@
         <div class="col-md-6">
           <div class="row albuns">
             <div class="col-md-6">
-              <img src="img/img1.jpg" class="img-fluid">
+              <img src="img/img1.png" class="img-fluid">
             </div>
             <div class="col-md-6">
-              <img src="img/img2.jpg" class="img-fluid">
+              <img src="img/img2.png" class="img-fluid">
             </div>
           </div>
           <div class="row albuns">
             <div class="col-md-6">
-              <img src="img/img3.jpg" class="img-fluid">
+              <img src="img/img3.png" class="img-fluid">
             </div>
             <div class="col-md-6 center">
               <img src="img/img4.jpg" class="center img-fluid">
@@ -113,20 +113,25 @@
           <h2>Descrição dos sensores</h2>
           <br>
           <br>
-          <h3>Preço</h3>
-          <p>Nossa concecionária possui o melhor preço da região, isto se deve a parcerias que realizamos com diversos
-            forncedores e nosso grande número de vendas</p>
+          <h3>Processos</h3>
+          <p>A execução de diversos programas em uma máquina faz com que o número de processos em execução seja elevado. Com isso,
+            esse sensor permite a análise dos processos em execução no sistema no momento atual do monitoramento.
+          </p>
           <br>
-          <h3>Vantagem</h3>
-          <p>Além de nosso ótimo atendimento temos uma política de restituição de bens sem burocracia para qualquer
-            problema encontrado com nossos produtos</p>
+          <h3>Datagramas UDP</h3>
+          <p>Este sensor permite o acompanhamento da porcentagem de datagramas enviados e recebidos via UDP no momento do monitoramento, onde 
+            o download e upload de dados pode ser notado nitidamente aqui.
+          </p>
           <br>
-          <h3>Vantagem</h3>
-          <p>Além de nosso ótimo atendimento temos uma política de restituição de bens sem burocracia para qualquer
-            problema encontrado com nossos produtos</p>
+          <h3>Tempo no computador</h3>
+          <p>Que tal monitorar o tempo que você passa em seu dispositivo? Este sensor permite este monitoramento de forma 
+            detalhada.
+          </p>
           <br>
-          <h3>Segurança</h3>
-          <p>Temos advogados e despachante próprios para tornar o processo de venda <strong>100%</strong> seguro</p>
+          <h3>Seguimentos TCP</h3>
+          <p>Este sensor permite o acompanhamento dos segmentos dos dados enviados e recebidos via TCP no momento do monitoramento, onde 
+            o download e upload de dados pode ser notado nitidamente aqui.
+          </p>
         </div>
 
       </div>
@@ -141,11 +146,11 @@
         <div class="col-6 col-sm-3 col-lg-2">
           <h4>Menu</h4>
           <ul class="navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sensor1.html">Sensor 1</a></li>
-            <li><a href="sensor1.html">Sensor 2</a></li>
-            <li><a href="sensor1.html">Sensor 3</a></li>
-            <li><a href="sensor1.html">Sensor 4</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="sensor1.php">Processos</a></li>
+            <li><a href="sensor2.php">Datagramas UDP</a></li>
+            <li><a href="sensor3.php">Tempo no computador</a></li>
+            <li><a href="sensor4.php">Seguimentos TCP</a></li>
           </ul>
         </div>
         <div class="col-6 col-sm-3 col-lg-2">

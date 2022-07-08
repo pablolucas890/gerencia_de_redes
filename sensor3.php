@@ -23,14 +23,14 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
-    <script defer src="js/script.js"></script>
+    <script defer src="js/script3.js"></script>
 </head>
 
 <body>
-  <nav class="fixed-top navbar navbar-expand-sm navbar-dark bg-primary">
+  <nav class="fixed navbar navbar-expand-sm navbar-dark bg-primary">
 
     <!-- Logo -->
-    <a href="index.html" class="navbar-brand">
+    <a href="index.php" class="navbar-brand">
       <img src="./img/logo.png" class="logo" alt="Logo">
     </a>
     <!-- Menu Hamburguer -->
@@ -42,36 +42,58 @@
     <div class="collapse navbar-collapse" id="navegacao">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a href="index.html" class="nav-link">Home</a>
+          <a href="index.php" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-          <a href="sensor1.html" class="nav-link">Sensor 1</a>
+          <a href="sensor1.php" class="nav-link">Processos</a>
         </li>
         <li class="nav-item">
-          <a href="sensor1.html" class="nav-link">Sensor 2</a>
+          <a href="sensor2.php" class="nav-link">Datagramas UDP</a>
         </li>
         <li class="nav-item">
-          <a href="sensor1.html" class="nav-link">Sensor 3</a>
+          <a href="sensor3.php" class="nav-link">Tempo no computador</a>
         </li>
         <li class="nav-item">
-          <a href="sensor1.html" class="nav-link">Sensor 4</a>
+          <a href="sensor4.php" class="nav-link">Seguimentos TCP</a>
         </li>
       </ul>
     </div>
   </nav>
-    <div>
-        <div class="row centralizar pt-3 pb-3 mt-1 pl-3 bg-dark text-white">
-            <h1>Número de Datagramas IP recebidos e enviados</h1>
-        </div>
-        
-        <canvas id="myChart" width="400" height="100"></canvas>
-        <div id="divBtn">
-          <button id="btnIniciar">Iniciar</button>
-          <button id="btnParar">Parar</button>
+  <div class="container-fluid mb-5">
+    <div class="row">
+      <div class="col-12 centralizar mt-1 mb-3 p-3 bg-primary text-white">
+        <h4>Sensor de Monitoramento do Tempo de Utilização do Dispositivo</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="centralizar mt-1 p-3 bg-primary text-black bg-white col-12">
+        <h4>Gráfico do Monitoramento do Tempo de Utilização do Dispositivo</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <canvas id="myChart" width="380" height="200"></canvas>
+      </div>
+      <div class="col-2"></div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-2"></div>
+      <div class="form-group row col-8">
+        <label for="inputPassword" class="col-form-label col-lg-3">
+          <h5>Digite o IP:</h5>
+        </label>
+        <div class="col-lg-9">
+          <input type="text" class="form-control" name="ip" id="ip" placeholder="Digite seu IP" value="127.0.0.1">
         </div>
       </div>
-
-   
+      <div class="col-2"></div>
+    </div>
+    <div id="divBtn">
+      <button type="button" class="btn btn-success" id="btnIniciar">Iniciar</button>
+      <button type="button" class="btn btn-danger" id="btnParar">Parar</button>
+    </div>
+  </div>
   <footer class="footer bg-primary">
     <div class="container">
       <div class="row">
@@ -81,11 +103,11 @@
         <div class="col-6 col-sm-3 col-lg-2">
           <h4>Menu</h4>
           <ul class="navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sensor1.html">Sensor 1</a></li>
-            <li><a href="sensor1.html">Sensor 2</a></li>
-            <li><a href="sensor1.html">Sensor 3</a></li>
-            <li><a href="sensor1.html">Sensor 4</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="sensor1.php">Processos</a></li>
+            <li><a href="sensor2.php">Datagramas UDP</a></li>
+            <li><a href="sensor3.php">Tempo no computador</a></li>
+            <li><a href="sensor4.php">Seguimentos TCP</a></li>
           </ul>
         </div>
         <div class="col-6 col-sm-3 col-lg-2">
